@@ -209,7 +209,7 @@ public class DefaultRemotingParser {
      * @return the remoting desc
      */
     public RemotingDesc getRemotingBeanDesc(String beanName) {
-        return remotingServiceMap.get(beanName);
+        return beanName != null?remotingServiceMap.get(beanName):null;
     }
 
 }
